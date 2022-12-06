@@ -1,0 +1,8 @@
+import { useContext } from 'react';
+import { NotificationsProviderContext } from '@contexts/NotificationsProvider';
+
+function useNotificationsProvider() {
+  return useContext(NotificationsProviderContext);
+}
+
+export { useNotificationsProvider };

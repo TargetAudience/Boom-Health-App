@@ -1,0 +1,3 @@
+import PatientOrderTransportationSales from './PatientOrderTransportationSales';
+
+export default PatientOrderTransportationSales;

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Boom Health</string>
+    <string name="default_notification_channel_id">default-channel-id</string>
+    <string name="facebook_app_id">812575139338853</string>
+</resources>

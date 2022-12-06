@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832085305527",
+    "project_id": "boom-health",
+    "storage_bucket": "boom-health.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832085305527:android:e8719fcc385dd8ecfd0532",
+        "android_client_info": {
+          "package_name": "com.boomhealth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832085305527-f4t1k58afavfn2bm5ktr0mj549dbupfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCssRsPMdpe8K3m0mJOcOji_jA7erWy24w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832085305527-f4t1k58afavfn2bm5ktr0mj549dbupfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

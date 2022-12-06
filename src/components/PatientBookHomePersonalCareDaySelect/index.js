@@ -1,0 +1,3 @@
+import PatientBookHomePersonalCareDaySelect from './PatientBookHomePersonalCareDaySelect';
+
+export default PatientBookHomePersonalCareDaySelect;

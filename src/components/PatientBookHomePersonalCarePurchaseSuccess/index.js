@@ -1,0 +1,3 @@
+import PatientBookHomePersonalCarePurchaseSuccess from './PatientBookHomePersonalCarePurchaseSuccess';
+
+export default PatientBookHomePersonalCarePurchaseSuccess;

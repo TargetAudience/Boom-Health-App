@@ -1,0 +1,3 @@
+import PatientMedicalEquipmentRentalItemDetail from './PatientMedicalEquipmentRentalItemDetail';
+
+export default PatientMedicalEquipmentRentalItemDetail;

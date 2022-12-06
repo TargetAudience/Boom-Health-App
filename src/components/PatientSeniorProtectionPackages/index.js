@@ -1,0 +1,3 @@
+import PatientSeniorProtectionPackages from './PatientSeniorProtectionPackages';
+
+export default PatientSeniorProtectionPackages;

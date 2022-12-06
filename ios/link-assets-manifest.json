@@ -1,0 +1,57 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Century Old Style Std Bold.otf",
+      "sha1": "672fc4b07e32bbf4b4a9c9e4669bc5d48b362e2d"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Bold.otf",
+      "sha1": "5cc70ab8285b198e12f73b0abaf5422105c4fe80"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-BoldItalic.otf",
+      "sha1": "34b7374e3f33f795d650b03158ee8e52ddd1f943"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Heavy.otf",
+      "sha1": "da73fd123a1ebeaaffe9afcdddc8366251221eab"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-HeavyItalic.otf",
+      "sha1": "2217db6275dd1e8702692cc9f32d8f5fd2cb0782"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Light.otf",
+      "sha1": "2f685d42cd6764767a0aefa7dcbe4b0e2fb79d99"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-LightItalic.otf",
+      "sha1": "3fbe47371df043681f0f25523b4eb8a88bf9487c"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Medium.otf",
+      "sha1": "35f7871a76a8858140c288989296be37a2d66d02"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-MediumItalic.otf",
+      "sha1": "a2fe7cbb909cf85d4e2486fbafbab035a4a99a6d"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Regular.otf",
+      "sha1": "d96457784d02ccd4b8e97606cac47df6593efe43"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-RegularItalic.otf",
+      "sha1": "dbd3bb458ce67fbcca18402111695fd98826a12c"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-Semibold.otf",
+      "sha1": "19651c6210712eabb7e036ec5fc607b45497f8fd"
+    },
+    {
+      "path": "src/assets/fonts/SFProText-SemiboldItalic.otf",
+      "sha1": "af5968c13edbc389b4d72cce2ba7d35d339df4f3"
+    }
+  ]
+}

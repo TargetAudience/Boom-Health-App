@@ -1,0 +1,3 @@
+import MedicationRemindersAddEditMedicine from './MedicationRemindersAddEditMedicine';
+
+export default MedicationRemindersAddEditMedicine;

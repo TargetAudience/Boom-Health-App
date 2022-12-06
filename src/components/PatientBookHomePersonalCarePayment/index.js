@@ -1,0 +1,3 @@
+import PatientBookHomePersonalCarePayment from './PatientBookHomePersonalCarePayment';
+
+export default PatientBookHomePersonalCarePayment;

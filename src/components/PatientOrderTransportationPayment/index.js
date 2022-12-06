@@ -1,0 +1,3 @@
+import PatientOrderTransportationPayment from './PatientOrderTransportationPayment';
+
+export default PatientOrderTransportationPayment;

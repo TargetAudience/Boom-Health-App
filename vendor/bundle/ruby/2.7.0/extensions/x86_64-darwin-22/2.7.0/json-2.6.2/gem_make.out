@@ -1,0 +1,13 @@
+current directory: /Users/joshuawinter/Projects/joshtest5/boomhealth_app/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+/Users/joshuawinter/.rbenv/versions/2.7.4/bin/ruby -I /Users/joshuawinter/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20221201-833-109gj2v.rb extconf.rb
+creating Makefile
+
+current directory: /Users/joshuawinter/Projects/joshtest5/boomhealth_app/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/joshuawinter/Projects/joshtest5/boomhealth_app/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/joshuawinter/Projects/joshtest5/boomhealth_app/vendor/bundle/ruby/2.7.0/gems/json-2.6.2/ext/json
+make "DESTDIR=" install

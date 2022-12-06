@@ -1,0 +1,3 @@
+import CaregiverMyAvailabilityCalendar from './CaregiverMyAvailabilityCalendar';
+
+export default CaregiverMyAvailabilityCalendar;

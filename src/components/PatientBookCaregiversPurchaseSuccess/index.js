@@ -1,0 +1,3 @@
+import PatientBookCaregiversPurchaseSuccess from './PatientBookCaregiversPurchaseSuccess';
+
+export default PatientBookCaregiversPurchaseSuccess;

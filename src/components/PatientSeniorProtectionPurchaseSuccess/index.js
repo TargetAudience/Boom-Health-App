@@ -1,0 +1,3 @@
+import PatientSeniorProtectionPurchaseSuccess from './PatientSeniorProtectionPurchaseSuccess';
+
+export default PatientSeniorProtectionPurchaseSuccess;

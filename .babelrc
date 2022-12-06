@@ -1,0 +1,37 @@
+{
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "."
+                ],
+                "extensions": [
+                    ".ios.js",
+                    ".android.js",
+                    ".js",
+                    ".json"
+                ],
+                "alias": {
+                    "src": "./src",
+                    "@actions": "./src/actions",
+                    "@components": "./src/components",
+                    "@constants": "./src/constants",
+                    "@containers": "./src/containers",
+                    "@lib": "./src/lib",
+                    "@reducers": "./src/reducers",
+                    "@sagas": "./src/sagas",
+                    "@utils": "./src/utils",
+                    "@ducks": "./src/state/ducks",
+                    "@selectors": "./src/state/selectors",
+                    "@assets": "./src/assets",
+                    "@api": "./src/api",
+                    "@state": "./src/state",
+                    "@hooks": "./src/hooks",
+                    "@contexts": "./src/contexts"
+                }
+            },
+            "react-native-reanimated/plugin"
+        ]
+    ]
+}

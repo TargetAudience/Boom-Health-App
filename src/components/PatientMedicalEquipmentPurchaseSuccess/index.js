@@ -1,0 +1,3 @@
+import PatientMedicalEquipmentPurchaseSuccess from './PatientMedicalEquipmentPurchaseSuccess';
+
+export default PatientMedicalEquipmentPurchaseSuccess;

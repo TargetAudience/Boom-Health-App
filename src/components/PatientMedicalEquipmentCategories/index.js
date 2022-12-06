@@ -1,0 +1,3 @@
+import PatientMedicalEquipmentCategories from './PatientMedicalEquipmentCategories';
+
+export default PatientMedicalEquipmentCategories;
