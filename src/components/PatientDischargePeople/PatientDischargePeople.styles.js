@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 20,
-    height: 60,
+    height: 80,
     alignItems: 'center',
     borderBottomColor: Colors.listRowSpacer,
     borderBottomWidth: StyleSheet.hairlineWidth
@@ -84,6 +84,21 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     alignItems: 'center',
     marginTop: 12
+  },
+  textSubTitle: {
+    textAlign: 'left',
+    color: Colors.textMain,
+    fontSize: 14.5,
+    marginLeft: 20,
+    marginTop: 20,
+    marginBottom: 12,
+  },
+  textNone: {
+    textAlign: 'left',
+    color: '#1c1c1c',
+    fontSize: 14.5,
+    marginBottom: 8,
+    marginLeft: 20,
   },
 });
 
