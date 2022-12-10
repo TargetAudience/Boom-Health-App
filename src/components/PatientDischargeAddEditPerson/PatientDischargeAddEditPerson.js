@@ -60,6 +60,7 @@ class PatientDischargeAddEditPerson extends Component {
   }
 
   async onPressAddOrUpdate() {
+    return;
     const { navigation, actions } = this.props;
     const {
       personId,

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Image, ScrollView, Dimensions, Platform, Text} from 'react-native';
+import {View, Image, ScrollView, Dimensions, Platform, Text, TouchableHighlight} from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
@@ -62,6 +62,12 @@ class PatientDischargePeople extends Component {
     this.setState({isLoading: false, data: people});
   };
 
+  onPressPerson = person => {
+    const { navigation } = this.props;
+
+    navigation.navigate('PatientDischargeAddEditPerson', { person, callBackLoadPeople: this.callBackLoadPeople });
+  };
+
   onPressAddPerson = () => {
     const {navigation} = this.props;
 
@@ -93,35 +99,41 @@ class PatientDischargePeople extends Component {
     const key = data.completedRegistration ? data.userId : data.inviteId;
 
     return (
-      <View key={key} style={styles.rowContainer}>
-        <View>
-          <AppText
-            textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
-            style={styles.leftLabelText}>
-            {data.firstName} {data.lastName}
-          </AppText>
-          <AppText textWeight="300" style={styles.leftLabelSubText}>
-            {labelAdmin}
-          </AppText>
-          <AppText textWeight="300" style={styles.leftLabelSubText}>
-            {data.emailAddress}
-          </AppText>
-          {data.blocked ? (
-            <View style={styles.blockedContainer}>
-              <Image
-                style={styles.permissionsBlocked}
-                source={images.permissionsBlocked}
-              />
-              <AppText
-                textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
-                style={styles.textBlocked}>
-                BLOCKED
-              </AppText>
-            </View>
-          ) : null}
+      <TouchableHighlight
+        onPress={() => this.onPressPerson(data)}
+        activeOpacity={0.6}
+        underlayColor={Colors.white}
+        key={key}>
+        <View style={styles.rowContainer}>
+          <View>
+            <AppText
+              textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
+              style={styles.leftLabelText}>
+              {data.firstName} {data.lastName}
+            </AppText>
+            <AppText textWeight="300" style={styles.leftLabelSubText}>
+              {labelAdmin}
+            </AppText>
+            {/* <AppText textWeight="300" style={styles.leftLabelSubText}>
+              {data.emailAddress}
+            </AppText> */}
+            {/* {data.blocked ? (
+              <View style={styles.blockedContainer}>
+                <Image
+                  style={styles.permissionsBlocked}
+                  source={images.permissionsBlocked}
+                />
+                <AppText
+                  textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
+                  style={styles.textBlocked}>
+                  BLOCKED
+                </AppText>
+              </View>
+            ) : null} */}
+          </View>
+          <Image style={Globals.iconChevron} source={images.iconChevron} />
         </View>
-        {/* <Image style={Globals.iconChevron} source={images.iconChevron} /> */}
-      </View>
+      </TouchableHighlight>
     );
   }
 
@@ -179,6 +191,8 @@ class PatientDischargePeople extends Component {
 
   render() {
     const {isLoading} = this.state;
+    const {familyMembers, familyInvited} = this.props;
+
     return (
       <SafeAreaView style={Globals.safeAreaViewGray}>
         <CustomHeaderBack title="People" onPressBack={this.onPressBack} />
@@ -189,19 +203,19 @@ class PatientDischargePeople extends Component {
           removeClippedSubviews={false}>
           {!isLoading ? (
             <>
-              <AppText
+              {/* <AppText
                 textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
                 style={styles.textSubTitle}>
                 Family Members
-              </AppText>
-              {this.renderFamilyMembers()}
-              <AppText
+              </AppText> */}
+              {!!familyMembers.length && this.renderFamilyMembers()}
+              {/* <AppText
                 textWeight={`${Platform.OS === 'ios' ? '600' : '500'}`}
                 style={styles.textSubTitle}>
                 Pending Invites
-              </AppText>
-              {this.renderPendingInvited()}
-              {/* {this.renderBottomButton()} */}
+              </AppText> */}
+              {!!familyInvited.length && this.renderPendingInvited()}
+              {this.renderBottomButton()}
             </>
           ) : null}
         </ScrollView>
